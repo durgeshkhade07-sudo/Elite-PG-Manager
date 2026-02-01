@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Entry | Elite PG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #0a0b1e; color: #fff; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        .form-box { background: rgba(255,255,255,0.03); backdrop-filter: blur(20px); border-radius: 30px; padding: 40px; border: 1px solid rgba(255,255,255,0.1); width: 450px; }
+        .form-control { background: rgba(255,255,255,0.05); border: 1px solid #333; color: #fff; border-radius: 12px; padding: 12px; }
+        .form-control:focus { background: rgba(255,255,255,0.1); color: #fff; border-color: #00f2fe; box-shadow: none; }
+        .btn-neon { background: linear-gradient(45deg, #7000ff, #00f2fe); border: none; padding: 12px; border-radius: 12px; font-weight: bold; width: 100%; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2 class="text-center mb-4 fw-bold">New <span style="color:#00f2fe">Tenant</span></h2>
+        <form method="POST">
+            <input type="text" name="name" class="form-control mb-3" placeholder="Full Name" required>
+            <input type="text" name="phone" class="form-control mb-3" placeholder="Phone Number" required>
+            <input type="text" name="room_no" class="form-control mb-3" placeholder="Room No" required>
+            <input type="number" name="rent" class="form-control mb-3" placeholder="Base Rent (₹)" required>
+            <input type="number" name="reading" class="form-control mb-4" placeholder="Initial Meter Reading">
+            <button class="btn-neon">CONFIRM REGISTRATION</button>
+            <div class="text-center mt-3"><a href="/" class="text-secondary text-decoration-none small">← Cancel</a></div>
+        </form>
+    </div>
+</body>
+</html>
